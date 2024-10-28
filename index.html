@@ -13,68 +13,78 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #FFB6C1; /* Soft pink background */
+            background-color: #fce4ec; /* Latar belakang pink lembut */
         }
+
         h1 {
-            margin: 20px 0;
+            margin: 20px 0; /* Menambahkan margin vertikal */
             font-size: 24px;
             text-align: center;
-            color: #DA291C; /* Manchester United red */
+            color: #da291c; /* Warna merah Manchester United */
         }
+
         #quote {
             margin: 20px;
             font-size: 20px;
             text-align: center;
-            color: #333; /* Quote text color */
+            color: #333; /* Warna kutipan */
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9); /* Soft white background */
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang kutipan putih lembut */
+            border-radius: 15px; /* Sudut melengkung */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
         }
+
         button {
             padding: 20px 40px;
             font-size: 20px;
-            background-color: #DA291C; /* Manchester United red button */
+            background-color: #da291c; /* Warna tombol merah Manchester United */
             color: white;
             border: none;
             border-radius: 15px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         button:hover {
-            background-color: #A0241A; /* Darker red on hover */
+            background-color: #a00000; /* Warna tombol saat hover */
         }
+
         .footer {
             margin-bottom: 50px;
-            margin-top: 10px;
+            margin-top: 10px; /* Mengurangi jarak antara footer dan Spotify embed */
             font-size: 16px;
-            color: #DA291C; /* Manchester United red footer text */
+            color: #da291c; /* Warna tulisan footer */
             text-align: center;
         }
+
         .puppy-image {
             margin-top: 25px;
-            width: 60%;
-            max-width: 400px;
-            border-radius: 15px;
+            width: 60%; /* Ukuran lebih kecil */
+            max-width: 400px; /* Maksimal lebar 400px */
+            border-radius: 15px; /* Sudut melengkung */
         }
+
         .spotify-embed {
             margin-bottom: -12px;
             margin-top: 20px;
             width: 80%;
             max-width: 600px;
         }
-        #title {
-            color: #FFD700; /* Keep this as is for contrast */
-        }
     </style>
 </head>
 <body>
+
     <img class="puppy-image" src="https://pbs.twimg.com/media/DPSPhWvUIAAguwe.jpg" alt="Cute Puppy 1">
+    
     <h1 id="title">made by Leandra</h1>
+    
     <div id="quote">guess what it is</div>
     <button onclick="generateQuote()">Tap</button>
+
     <iframe class="spotify-embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/47isJpIIO8m7BJEhiFhnaf?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
     <div class="footer">Made for Gea and Gea only</div>
+
     <script>
         const quotes = [
             "You're doing better than you think you are.",
@@ -139,11 +149,13 @@
             "You are cherished, and your feelings are important.",
             "You are capable of incredible things; never doubt it."
         ];
+
         function generateQuote() {
             const randomIndex = Math.floor(Math.random() * quotes.length);
             document.getElementById('quote').innerText = quotes[randomIndex];
-            document.getElementById('title').innerText = "WEST HAM 🔛🔝"; // Change the h1 text
+            document.getElementById('title').innerText = "😌"; // Mengubah teks h1
         }
     </script>
+
 </body>
 </html>
