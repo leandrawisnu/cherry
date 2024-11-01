@@ -13,57 +13,51 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #fce4ec; /* Latar belakang pink lembut */
+            background-color: #ffffff; /* White background */
+            color: #787474; /* Accent color */
         }
-
         h1 {
-            margin: 20px 0; /* Menambahkan margin vertikal */
+            margin: 20px 0; /* Add vertical margin */
             font-size: 24px;
             text-align: center;
-            color: #da291c; /* Warna merah Manchester United */
+            color: #787474; /* Accent color */
         }
-
         #quote {
             margin: 20px;
             font-size: 20px;
             text-align: center;
-            color: #333; /* Warna kutipan */
+            color: #787474; /* Accent color */
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang kutipan putih lembut */
-            border-radius: 15px; /* Sudut melengkung */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            background-color: rgba(120, 116, 116, 0.1); /* Soft grey background */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
         }
-
         button {
             padding: 20px 40px;
             font-size: 20px;
-            background-color: #da291c; /* Warna tombol merah Manchester United */
+            background-color: #787474; /* Accent color */
             color: white;
             border: none;
             border-radius: 15px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
-
         button:hover {
-            background-color: #a00000; /* Warna tombol saat hover */
+            background-color: #5A5555; /* Darker shade on hover */
         }
-
         .footer {
             margin-bottom: 50px;
-            margin-top: 10px; /* Mengurangi jarak antara footer dan Spotify embed */
+            margin-top: 10px; /* Reduce spacing between footer and Spotify embed */
             font-size: 16px;
-            color: #da291c; /* Warna tulisan footer */
+            color: #787474; /* Accent color */
             text-align: center;
         }
-
         .puppy-image {
             margin-top: 25px;
-            width: 60%; /* Ukuran lebih kecil */
-            max-width: 400px; /* Maksimal lebar 400px */
-            border-radius: 15px; /* Sudut melengkung */
+            width: 60%; /* Smaller size */
+            max-width: 400px; /* Max width 400px */
+            border-radius: 15px; /* Rounded corners */
         }
-
         .spotify-embed {
             margin-bottom: 0px;
             margin-top: 20px;
@@ -73,18 +67,12 @@
     </style>
 </head>
 <body>
-
     <img class="puppy-image" src="https://pbs.twimg.com/profile_images/544998351763042304/rpzoRHua_400x400.jpeg" alt="Cute Puppy">
-    
     <h1 id="title">made by Leandra</h1>
-    
     <div id="quote">been down?</div>
-    <button onclick="generateQuote()">Tap 👆</button>
-
+    <button onclick="generateQuote()">Tap </button>
     <iframe class="spotify-embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/2kSb3wYSOV996xA2NSmpck?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
     <div class="footer">Still Made for Gea and Gea only</div>
-
     <script>
         const quotes = [
             "You're doing better than you think you are.",
@@ -149,13 +137,11 @@
             "You are cherished, and your feelings are important.",
             "You are capable of incredible things; never doubt it."
         ];
-
         function generateQuote() {
             const randomIndex = Math.floor(Math.random() * quotes.length);
             document.getElementById('quote').innerText = quotes[randomIndex];
-            document.getElementById('title').innerText = ":)"; // Mengubah teks h1
+            document.getElementById('title').innerText = ":)"; // Change the h1 text
         }
     </script>
-
 </body>
 </html>
